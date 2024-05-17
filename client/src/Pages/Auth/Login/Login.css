@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "montserrat", sans-serif;
+}
+
+
+
+.con{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-con{
+    /* background-color: red; */
+    max-width:  80vw;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    
+}
+
+.log-img{
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.log-img img{
+    width: 100%;
+    height: inherit;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.form{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.form header{
+    margin: 50px 0 70px 0;
+    font-size: 35px;
+    font-weight: 800;
+    text-align: center;
+}   
+.form div { 
+    margin-bottom: 30px;
+}
+
+.log-email, .log-password{
+    width: 350px;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid gray;
+
+    color: black;
+    font-size: 14px;
+}
+
+.form div div input::placeholder{
+    color: rgba(0, 0, 0, 0.4);
+}
+
+/* .form div input:: */
+
+form{
+    margin-left: 120px;
+}
+
+form div div section {
+    display: flex;
+    justify-content: center;  
+}
+
+input[type=submit]{
+    width: 110px;   
+    padding: 10px;
+    background-color: #518581;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    color: white;
+}
+
+.msg{
+    margin-top: 30px;
+}

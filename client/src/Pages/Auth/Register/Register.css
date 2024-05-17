@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "montserrat", sans-serif;
+  }
+  
+  .con {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .reg-con {
+    width: 80vw;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  }
+  
+  .reg-img {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .reg-img img {
+    width: 100%;
+    height: inherit;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  
+  .form {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+    margin-right: 20px;
+  }
+  
+  .form header {
+    margin: 50px 0 70px 0;
+    font-size: 35px;
+    font-weight: 800;
+    text-align: center;
+  }
+  
+  .form div {
+    margin-bottom: 30px;
+  }
+  
+  .reg-email,
+  .reg-name,
+  .reg-password {
+    width: 350px;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #518581;
+    color: black;
+    font-size: 14px;
+  }
+  
+  .form div input::placeholder {
+    color: rgba(0, 0, 0, 0.4);
+  }
+  
+  form {
+    margin-left: 120px;
+  }
+  
+  form section {
+    display: flex;
+    justify-content: center;
+  }
+  
+  form section input[type="submit"] {
+    width: 110px;
+    padding: 10px;
+    background-color: #518581;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    align-self: center;
+    cursor: pointer;
+  }
+  
+  .msg {
+    margin-top: 30px;
+  }
+  
+  /* Responsive */
+  /* Mobile phone */
+  @media (max-width: 768px) {
+    .reg-img img {
+      display: none;
+    }
+    .form header {
+      font-size: 30px;
+      margin-left: 100px;
+    }
+    .form {
+      margin: auto;
+    }
+    .reg-email,
+    .reg-name,
+    .reg-password {
+      width: 80%;
+      max-width: 250px; /* Added max-width to limit width on larger screens */
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .msg {
+      margin-left: 50px;
+      text-align: center;
+    }
+  }
+  
