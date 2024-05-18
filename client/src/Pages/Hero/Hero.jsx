@@ -18,7 +18,7 @@ export default function Hero() {
         <Button className="bg-[#22c55e] text-white"><Link to={localStorage.getItem("token") ? "/services": "/login"}>explore services</Link></Button>
       </div>
       <div className="flex-1 ">
-        <img alt="People running uphill towards their dreams" className="max-w h-auto" src={img} />
+        <img alt="People running uphill towards their dreams" className="max-w h-auto " style={{borderRadius: "10px"}} src={img} />
       </div>
     </section>
     </div>

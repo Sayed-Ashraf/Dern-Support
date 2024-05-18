@@ -3,7 +3,7 @@ import './Login.css';
 import img from '../../../assets/Why-ITSM-is-integral-in-enterprise-wide-digitisation.jpg';
 import { Link } from 'react-router-dom';
 import useAuth  from '../../../Components/Hook/useAuth' //Import useAuth hook
-import { Toaster } from 'react-hot-toast';
+import toast, { Toaster } from 'react-hot-toast';
 
 
 const Login = () => {

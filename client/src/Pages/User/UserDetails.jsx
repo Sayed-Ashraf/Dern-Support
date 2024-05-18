@@ -5,12 +5,14 @@ import axios from 'axios';
 import useAuth from '../../Components/Hook/useAuth';
 import { jwtDecode } from 'jwt-decode';
 
+
 const UserDetails = () => {
   const navigate = useNavigate();
   const token = localStorage.getItem('token');
   const decoded = jwtDecode(token);
   const {deleteUser} = useAuth();
   const id = decoded.id;
+  console.log(decoded);
   const [values, setValues] = useState({
     username: '',
     email: '',

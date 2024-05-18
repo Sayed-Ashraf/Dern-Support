@@ -20,7 +20,7 @@ const CreateFeedback = () => {
   const validateForm = () => {
     let errors = [];
 
-    if (!values.description || values.description.length < 10) {
+    if (!values.description) {
       errors.push('Enter a valid description (at least 10 characters)');
     }
 

@@ -14,9 +14,6 @@ class usersController {
         }
     }
     static showUser = async(req, res) => {
-        if(req.role !== 'admin'){
-            return res.status(403).json({ error: "Unauthorized - Admin access required" });
-        }
         try{
             const id = req.params.id;
             const user = await users.findOne({where: {id: id}});

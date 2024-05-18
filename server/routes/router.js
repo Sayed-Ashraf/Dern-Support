@@ -10,7 +10,7 @@ const router = express.Router();
 
 // Users Routes
 router.get('/users', usersController.getUsers);
-router.get('/users/:id', authMiddleware, usersController.showUser);
+router.get('/users/:id', usersController.showUser);
 router.post('/users/add', authMiddleware, usersController.addUser);
 router.put('/users/:id/update',  usersController.updateUser);
 router.delete('/users/:id/delete', usersController.deleteUser);
